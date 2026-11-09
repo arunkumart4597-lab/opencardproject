@@ -1,0 +1,56 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OpenCart All Groups Suite">
+
+    <listeners>
+        <listener class-name="testBase.TestListener"/>
+    </listeners>
+
+    <test name="Sanity Tests">
+        <parameter name="os" value="Windows"/>
+        <parameter name="browser" value="chrome"/>
+        <groups>
+            <run>
+                <include name="sanity"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="testBase.TC_001Homepage"/>
+            <class name="testBase.TC_002Loginpage"/>
+            <class name="testBase.TC_003LoginTest"/>
+            <class name="testBase.TC_004claude"/>
+        </classes>
+    </test>
+
+    <test name="Regression Tests">
+        <parameter name="os" value="Windows"/>
+        <parameter name="browser" value="chrome"/>
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="testBase.TC_001Homepage"/>
+            <class name="testBase.TC_002Loginpage"/>
+            <class name="testBase.TC_003LoginTest"/>
+            <class name="testBase.TC_004claude"/>
+        </classes>
+    </test>
+
+    <test name="Master Tests">
+        <parameter name="os" value="Windows"/>
+        <parameter name="browser" value="chrome"/>
+        <groups>
+            <run>
+                <include name="master"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="testBase.TC_001Homepage"/>
+            <class name="testBase.TC_002Loginpage"/>
+            <class name="testBase.TC_003LoginTest"/>
+            <class name="testBase.TC_004claude"/>
+        </classes>
+    </test>
+
+</suite>

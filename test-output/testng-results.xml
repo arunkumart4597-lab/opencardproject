@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-11-06T08:59:09 IST" name="master" finished-at="2026-11-06T08:59:54 IST" duration-ms="44836">
+    <groups>
+      <group name="regression">
+        <method signature="TC_003LoginTest.verify_LoginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testBase.TC_003LoginTest@2cd76f31]" name="verify_LoginDDT" class="testBase.TC_003LoginTest"/>
+        <method signature="TC_004claude.Homepagetest()[pri:0, instance:testBase.TC_004claude@367ffa75]" name="Homepagetest" class="testBase.TC_004claude"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="TC_001Homepage.verifyRegistration()[pri:0, instance:testBase.TC_001Homepage@4e08711f]" name="verifyRegistration" class="testBase.TC_001Homepage"/>
+        <method signature="TC_003LoginTest.verify_LoginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testBase.TC_003LoginTest@2cd76f31]" name="verify_LoginDDT" class="testBase.TC_003LoginTest"/>
+      </group> <!-- sanity -->
+      <group name="master">
+        <method signature="TC_001Homepage.verifyRegistration()[pri:0, instance:testBase.TC_001Homepage@4e08711f]" name="verifyRegistration" class="testBase.TC_001Homepage"/>
+        <method signature="TC_003LoginTest.verify_LoginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testBase.TC_003LoginTest@2cd76f31]" name="verify_LoginDDT" class="testBase.TC_003LoginTest"/>
+        <method signature="TC_004claude.Homepagetest()[pri:0, instance:testBase.TC_004claude@367ffa75]" name="Homepagetest" class="testBase.TC_004claude"/>
+      </group> <!-- master -->
+    </groups>
+    <test started-at="2026-11-06T08:59:09 IST" name="ChromeTest" finished-at="2026-11-06T08:59:54 IST" duration-ms="44836">
+      <class name="testBase.TC_001Homepage">
+        <test-method is-config="true" signature="browserlaunch(java.lang.String,java.lang.String)[pri:0, instance:testBase.TC_001Homepage@4e08711f]" started-at="2026-11-06T08:59:09 IST" name="browserlaunch" finished-at="2026-11-06T08:59:14 IST" duration-ms="4649" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserlaunch -->
+        <test-method signature="verifyRegistration()[pri:0, instance:testBase.TC_001Homepage@4e08711f]" started-at="2026-11-06T08:59:14 IST" name="verifyRegistration" finished-at="2026-11-06T08:59:24 IST" duration-ms="10624" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#input-firstname"}
+  (Session info: chrome=157.0.8103.39)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.50.0', revision: 'be845fb be845fb44341cd7a6e7b27ba02dc1bdcf69dc51c'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c873598b8b36a398e1fdd5f1ca96cda1, findElement {value=#input-firstname, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 157.0.8103.39, chrome: {chromedriverVersion: 157.0.8103.38 (a733b5afbb3b..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55545}, goog:processID: 11852, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55545/devtoo..., se:cdpVersion: 157.0.8103.39, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c873598b8b36a398e1fdd5f1ca96cda1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#input-firstname"}
+  (Session info: chrome=157.0.8103.39)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.50.0', revision: 'be845fb be845fb44341cd7a6e7b27ba02dc1bdcf69dc51c'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c873598b8b36a398e1fdd5f1ca96cda1, findElement {value=#input-firstname, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 157.0.8103.39, chrome: {chromedriverVersion: 157.0.8103.38 (a733b5afbb3b..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55545}, goog:processID: 11852, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55545/devtoo..., se:cdpVersion: 157.0.8103.39, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c873598b8b36a398e1fdd5f1ca96cda1
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:252)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:667)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:432)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:426)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy32.sendKeys(Unknown Source)
+at pageObject.Registerpage.setFirstName(Registerpage.java:41)
+at testBase.TC_001Homepage.verifyRegistration(TC_001Homepage.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegistration -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:testBase.TC_001Homepage@4e08711f]" started-at="2026-11-06T08:59:24 IST" name="closebrowser" finished-at="2026-11-06T08:59:25 IST" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- testBase.TC_001Homepage -->
+      <class name="testBase.TC_003LoginTest">
+        <test-method is-config="true" signature="browserlaunch(java.lang.String,java.lang.String)[pri:0, instance:testBase.TC_003LoginTest@2cd76f31]" started-at="2026-11-06T08:59:09 IST" name="browserlaunch" finished-at="2026-11-06T08:59:14 IST" duration-ms="4584" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserlaunch -->
+        <test-method signature="verify_LoginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testBase.TC_003LoginTest@2cd76f31]" started-at="2026-11-06T08:59:16 IST" name="verify_LoginDDT" data-provider="LoginData" finished-at="2026-11-06T08:59:19 IST" duration-ms="3059" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[arun.kumar1234@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Arun@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_LoginDDT -->
+        <test-method signature="verify_LoginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testBase.TC_003LoginTest@2cd76f31]" started-at="2026-11-06T08:59:19 IST" name="verify_LoginDDT" data-provider="LoginData" finished-at="2026-11-06T08:59:30 IST" duration-ms="11559" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[arun.kumar1234@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongpsw]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_LoginDDT -->
+        <test-method signature="verify_LoginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testBase.TC_003LoginTest@2cd76f31]" started-at="2026-11-06T08:59:30 IST" name="verify_LoginDDT" data-provider="LoginData" finished-at="2026-11-06T08:59:42 IST" duration-ms="11605" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Wrongusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Arun@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_LoginDDT -->
+        <test-method signature="verify_LoginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testBase.TC_003LoginTest@2cd76f31]" started-at="2026-11-06T08:59:42 IST" name="verify_LoginDDT" data-provider="LoginData" finished-at="2026-11-06T08:59:53 IST" duration-ms="11477" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test.user@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@5678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_LoginDDT -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:testBase.TC_003LoginTest@2cd76f31]" started-at="2026-11-06T08:59:53 IST" name="closebrowser" finished-at="2026-11-06T08:59:54 IST" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- testBase.TC_003LoginTest -->
+      <class name="testBase.TC_004claude">
+        <test-method is-config="true" signature="browserlaunch(java.lang.String,java.lang.String)[pri:0, instance:testBase.TC_004claude@367ffa75]" started-at="2026-11-06T08:59:09 IST" name="browserlaunch" finished-at="2026-11-06T08:59:14 IST" duration-ms="4606" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserlaunch -->
+        <test-method signature="Homepagetest()[pri:0, instance:testBase.TC_004claude@367ffa75]" started-at="2026-11-06T08:59:14 IST" name="Homepagetest" finished-at="2026-11-06T08:59:14 IST" duration-ms="584" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Register page did not open expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Register page did not open expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testBase.TC_004claude.Homepagetest(TC_004claude.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Homepagetest -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:testBase.TC_004claude@367ffa75]" started-at="2026-11-06T08:59:15 IST" name="closebrowser" finished-at="2026-11-06T08:59:17 IST" duration-ms="2606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- testBase.TC_004claude -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- master -->
+</testng-results>
